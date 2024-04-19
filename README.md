@@ -1,3 +1,12 @@
+## NH8CHIR Library
+### current version 0.0.2 Beta
+<hr>
+
+## Documentation
+
+### Basic usage
+
+```
 #include <Wire.h>
 #include <NH8CHIR.h>
 
@@ -22,3 +31,4 @@ void loop()
   }
   delay(10);
 }
+```
