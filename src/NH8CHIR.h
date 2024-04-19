@@ -4,11 +4,11 @@
 #include "Arduino.h"
 #include <Wire.h>
 
-#define EXT 0 // External VREF
-#define INT 1 // Internal VREF
+#define EXT 0
+#define INT 1
 
-#define SD 1 // Single ended mode
-#define DF 0 // Differential mode
+#define SD 1
+#define DF 0
 
 
 class NH8CHIR 
