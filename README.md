@@ -1,5 +1,5 @@
 ## NH8CHIR Library
-### current version 1.0.0
+### current version `` 1.1.0 ``
 <hr>
 
 ## Documentation
