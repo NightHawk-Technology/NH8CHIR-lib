@@ -14,7 +14,7 @@ void loop()
   
   for(int x = 0; x < 8; x++){
     
-    read_value = adc.read(x, SD);
+    int read_value = adc.read(x, SD);
     Serial.print("Channel ");
     Serial.print(x);
     Serial.print(": ");
