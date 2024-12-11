@@ -1,7 +1,7 @@
 #include <Wire.h>
 #include <NH8CHIR.h>
 
-NH8CHIR adc(0x49);  
+NH8CHIR adc(0x49);        // Change to sensor's I2C address
 
 int front_sensorMin[8] = { 4095, 4095, 4095, 4095, 4095, 4095, 4095, 4095 };
 int front_sensorMax[8] = { 0, 0, 0, 0, 0, 0, 0, 0 };
@@ -11,6 +11,7 @@ unsigned long calibrationStartTime;
 const unsigned long calibrationDuration = 5000;
 
 void setup() {
+  adc.init();
   IRCalibrate();
 }
 

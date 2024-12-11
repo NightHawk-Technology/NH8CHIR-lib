@@ -39,7 +39,7 @@ void loop()
 #include <Wire.h>
 #include <NH8CHIR.h>
 
-NH8CHIR front(0x49);
+NH8CHIR front(0x49);                //Must scan first on I2C_Scanner sketch
 
 int front_sensorMin[8] = { 4095, 4095, 4095, 4095, 4095, 4095, 4095, 4095 };
 int front_sensorMax[8] = { 0, 0, 0, 0, 0, 0, 0, 0 };
@@ -56,6 +56,7 @@ bool b(int pin) {
 }
 
 void setup(){
+  front.init();
   IRCalibrate();
 }
 
